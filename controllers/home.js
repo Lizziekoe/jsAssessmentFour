@@ -3,6 +3,7 @@ emailClient.HomeController = Ember.ArrayController.extend({
     save: function() {
       var newEmail = this.store.createRecord('email', {
         subject: this.get('subject'),
+        sender: this.get('sender'),
         body: this.get('body')
       });
       newEmail.save();

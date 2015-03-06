@@ -1,1 +1,9 @@
-yeahs
+<h1>Folders</h1>
+
+<ul>
+  {{#each}}
+    <li>{{name}}</li>
+  {{/each}}
+</ul>
+
+<p>{{#link-to 'new-folder' classNames="btn btn-primary"}}New Folder{{/link-to}}</p>

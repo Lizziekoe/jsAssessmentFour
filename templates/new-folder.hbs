@@ -1,1 +1,8 @@
-okay
+<form>
+  <div class="form-group">
+    <label for="name">Add a Folder To Store Emails</label>
+    {{input value=name id="name" class="form-control"}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'save'}}>Save</button>
+</form>
